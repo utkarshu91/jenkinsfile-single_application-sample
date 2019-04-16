@@ -20,9 +20,9 @@ pipeline {
         stage("Maven Build") {
             steps {
                 container('maven') {
-                    withCredentials([file(credentialsId: "artifactorygdn", variable: 'SA')]) {
+                   // withCredentials([file(credentialsId: "artifactorygdn", variable: 'SA')]) {
                        sh "ls -l"
-                        }
+                     //   }
                     }
                 }
             }   
