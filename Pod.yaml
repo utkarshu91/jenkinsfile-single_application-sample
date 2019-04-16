@@ -24,12 +24,7 @@ spec:
     volumeMounts:
     - name: agent-data
       mountPath: /root/
-    - name: nfs
-      mountPath: "/mountpath"
   restartPolicy: Never
   volumes:
     - name: agent-data
       emptyDir: {}
-    - name: nfs
-      persistentVolumeClaim:
-      claimName: nfs
