@@ -3,7 +3,7 @@ pipeline {
         kubernetes {
             label "uiui"
             defaultContainer 'jnlp'
-            yaml 
+            yamlFile 'Pod.yaml'
             }
         }
     stages {
