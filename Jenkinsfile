@@ -10,7 +10,6 @@ pipeline {
         stage("checkout"){
             steps {
                 container('git'){
-                  //git credentialsId: 'artifactorygdn', url: 'https://github.com/m2c-team/docker_build_script.git', branch: 'master'    
                     sh "ls -l"
                     }
                 
@@ -20,9 +19,9 @@ pipeline {
         stage("Maven Build") {
             steps {
                 container('maven') {
-                   // withCredentials([file(credentialsId: "artifactorygdn", variable: 'SA')]) {
+                   
                        sh "ls -l"
-                     //   }
+                     
                     }
                 }
             }   
