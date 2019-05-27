@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        kubernetes {
+        any {
             label "uiui"
             defaultContainer 'jnlp'
             yamlFile 'Pod.yaml'
