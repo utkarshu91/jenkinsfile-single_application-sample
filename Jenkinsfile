@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        any {
+        minikube {
             label "uiui"
             defaultContainer 'jnlp'
             yamlFile 'Pod.yaml'
