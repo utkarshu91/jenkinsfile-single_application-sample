@@ -6,7 +6,7 @@ pipeline {
             yamlFile 'Pod.yaml'
             }
         }
-    stages {
+    node('uiui') {
         stage("checkout"){
             steps {
                 container('git'){
